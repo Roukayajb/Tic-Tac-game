@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body onload="startgame();">
+    <div id="message">whose the winner!</div>
+    <div class="tic-tac-toe ">
+        <table border="1px solid black " style="display: inline-table">
+            <tr>
+                <td id="cell1" class="square" onclick="nextMove(this);"></td>
+                <td id="cell2" class="square" onclick="nextMove(this);"></td>
+                <td id="cell3" class="square" onclick="nextMove(this);"></td>
+            </tr>
+            <tr>
+                <td id="cell4" class="square" onclick="nextMove(this);"></td>
+                <td id="cell5" class="square" onclick="nextMove(this);"></td>
+                <td id="cell6" class="square" onclick="nextMove(this);"></td>
+            </tr>
+            <tr>
+                <td id="cell7" class="square" onclick="nextMove(this);"></td>
+                <td id="cell8" class="square" onclick="nextMove(this);"></td>
+                <td id="cell9" class="square" onclick="nextMove(this);"></td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <h3></h3><a href="javascript: startgame();" id="restart">Restart</a>
+    </div>
+    <script  src="main.js"> </script>
+</body>
+
+</html>
